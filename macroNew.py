@@ -63,15 +63,15 @@ def parse_text(text, username, message_id):
               # подхавка, если проебано сообщение о голоде и голод уже 100%
         if on == 1:
             if text.find('100%') != -1:
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '/myfood')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '/use_101')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '/use_107')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '/use_114')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '/use_114')
                     #/
         # счетчик хилок
@@ -84,35 +84,35 @@ def parse_text(text, username, message_id):
                     #/
                     # Нью-рино закупка хилок и го
             if text.find('Самый большой маленький городок в мире') != -1:
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '👓Инженер')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '⛑Аптечка')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 if medpack < 3:
                     send_msg('@', bot_username, '💌 Медпак')
-                    time.sleep(random.randint(1, 7))
+                    time.sleep(random.randint(2, 7)))
                 if medpack < 3:
                     send_msg('@', bot_username, '💌 Медпак')
-                    time.sleep(random.randint(1, 7))
+                    time.sleep(random.randint(2, 7)))
                 if medpack < 3:
                     send_msg('@', bot_username, '💌 Медпак')
-                    time.sleep(random.randint(1, 7))
+                    time.sleep(random.randint(2, 7)))
                 if medx1 < 2:
                     send_msg('@', bot_username, '💉 Мед-Х')
-                    time.sleep(random.randint(1, 7))
+                    time.sleep(random.randint(2, 7)))
                 if medx1 < 2:
                     send_msg('@', bot_username, '💉 Мед-Х')
-                    time.sleep(random.randint(1, 7))
+                    time.sleep(random.randint(2, 7)))
                 if buffout < 2:
                     send_msg('@', bot_username, '💊 Баффаут')
-                    time.sleep(random.randint(1, 7))
+                    time.sleep(random.randint(2, 7)))
                 if buffout < 2:
                     send_msg('@', bot_username, '💊 Баффаут')
                 medpack = 3
                 medx1 = 2
                 buffout = 2
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '👣Пустошь')
                     #/
                     # хил по сообщению о голоде
@@ -130,87 +130,87 @@ def parse_text(text, username, message_id):
                     #/
                     # Отаке
             elif text.find('на тебя напал') != -1:
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '⚔️Дать отпор')
                     #/
                     # Точка поворота в лагерь + хил в лагере + уход в Нью-Рино
             elif text.find('42км от лагеря') != -1 or text.find('Расстояние: 38') != -1:
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '⛺️Вернуться')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '🛠Верстак')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '⛑Аптечка')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '💉++ Суперстим')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '🏘В Нью-Рино')
                     #/
                     # Точки с которых начинаются попытки хила
             elif text.find('39км от лагеря') != -1 or text.find('Расстояние: 35') != -1:
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 if text.find('нанес тебе удар') != -1:
                     if medpack > 0:
                         send_msg('@', bot_username, '/medpack')
-                        time.sleep(random.randint(1, 7))
+                        time.sleep(random.randint(2, 7)))
                         if medpack > 0:
                             send_msg('@', bot_username, '/medpack')
-                            time.sleep(random.randint(1, 7))
+                            time.sleep(random.randint(2, 7)))
                     else:
                         send_msg('@', bot_username, '/medx1')
-                        time.sleep(random.randint(1, 7))
+                        time.sleep(random.randint(2, 7)))
                         send_msg('@', bot_username, '/medx1')
-                        time.sleep(random.randint(1, 7))
+                        time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '👣Идти дальше')
             elif text.find('40км от лагеря') != -1 or text.find('Расстояние: 36') != -1:
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '/medpack')
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 if text.find('нанес тебе удар') != -1:
                     if medpack > 0:
                         send_msg('@', bot_username, '/medpack')
-                        time.sleep(random.randint(1, 7))
+                        time.sleep(random.randint(2, 7)))
                         if medpack >0:
                             send_msg('@', bot_username, '/medpack')
-                            time.sleep(random.randint(1, 7))
+                            time.sleep(random.randint(2, 7)))
                     elif medx1 > 0:
                         send_msg('@', bot_username, '/medx1')
-                        time.sleep(random.randint(1, 7))
+                        time.sleep(random.randint(2, 7)))
                         if medx1 > 0:
                             send_msg('@', bot_username, '/medx1')
-                            time.sleep(random.randint(1, 7))
+                            time.sleep(random.randint(2, 7)))
                     else:
                         send_msg('@', bot_username, '/buffout')
-                        time.sleep(random.randint(1, 7))
+                        time.sleep(random.randint(2, 7)))
                         send_msg('@', bot_username, '/buffout')
-                        time.sleep(random.randint(1, 7))
+                        time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '👣Идти дальше')
             elif text.find('41км от лагеря') != -1 or text.find('Расстояние: 37') != -1:
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 if text.find('нанес тебе удар') != -1:
                     if medpack > 0:
                         send_msg('@', bot_username, '/medpack')
-                        time.sleep(random.randint(1, 7))
+                        time.sleep(random.randint(2, 7)))
                         if medpack >0:
                             send_msg('@', bot_username, '/medpack')
-                            time.sleep(random.randint(1, 7))
+                            time.sleep(random.randint(2, 7)))
                     elif medx1 > 0:
                         send_msg('@', bot_username, '/medx1')
-                        time.sleep(random.randint(1, 7))
+                        time.sleep(random.randint(2, 7)))
                         if medx1 > 0:
                             send_msg('@', bot_username, '/medx1')
-                            time.sleep(random.randint(1, 7))
+                            time.sleep(random.randint(2, 7)))
                     elif buffout > 0:
                         send_msg('@', bot_username, '/buffout')
-                        time.sleep(random.randint(1, 7))
+                        time.sleep(random.randint(2, 7)))
                         if buffout > 0:
                             send_msg('@', bot_username, '/buffout')
-                            time.sleep(random.randint(1, 7))
+                            time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '👣Идти дальше')
                         #/
                         # Идти дальше
             elif text.find('км от лагеря') != -1 or text.find('Расстояние:') != -1:
-                time.sleep(random.randint(1, 7))
+                time.sleep(random.randint(2, 7)))
                 send_msg('@', bot_username, '👣Идти дальше')
                         #/
 
