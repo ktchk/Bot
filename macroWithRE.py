@@ -76,20 +76,20 @@ def parse_text(text, username, message_id):
                     #/
          # Logika ispolzovania aptechek i prochej huetoti
         if on == 1:
-           Life = re.search(\d{3}\/)
-           MaxLife = re.search(\/\d{3})
+           life = re.search(\d{3}\/)
+           max_life = re.search(\/\d{3})
 # Находим переменные вида 123/ и /123
-           Life = Life[0:(len(Life)-1)]
-           MaxLife = Life[0:(len(MaxLife)-1)]  # MISTAKE KOSTYA ALO BLIAD
+           life = life[0:(len(Life)-1)]
+           max_life = max_life[0:(len(max_life)-1)]  # MISTAKE KOSTYA ALO BLIAD
 # Организуем из них числа
-            while Maxlife - Life > 60
+            while max_life - life > 60
                 if medpack > 0:
                 send_msg('@', bot_username, '/medpack')
-            while 59 > Maxlife - Life > 30
+            while 59 > max_life - life > 30
                 if medx1 > 0:
                    send_msg('@', bot_username, '/medx1')
                    time.sleep(random.randint(2, 7))
-            while 29 > Maxlife - Life > 17
+            while 29 > max_life - life > 17
                 if buffout > 0:
                    send_msg('@', bot_username, '/buffout')
                    time.sleep(random.randint(2, 7))
