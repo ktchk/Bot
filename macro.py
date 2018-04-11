@@ -19,7 +19,7 @@ buffout = 2
 on = 1
 distance1 = None
 distance2 = None
-
+#
 # ⛑Аптечка
 # 💌 Медпак
 # 💉 Мед-Х
