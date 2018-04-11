@@ -67,32 +67,32 @@ def parse_text(text, username, message_id):
             dalnost = '10км от лагеря'
             distancia = 'Расстояние: 10'
         elif text.find('12km') != -1:
-            on = 2
+            on = 3
             print('12km')
             dalnost = '12км от лагеря'
             distancia = 'Расстояние: 12'
         elif text.find('15km') != -1:
-            on = 2
+            on = 4
             print('15km')
             dalnost = '15км от лагеря'
             distancia = 'Расстояние: 15'
         elif text.find('19km') != -1:
-            on = 2
+            on = 5
             print('19km')
             dalnost = '19км от лагеря'
             distancia = 'Расстояние: 19'
         elif text.find('22km') != -1:
-            on = 2
+            on = 6
             print('22km')
             dalnost = '22км от лагеря'
             distancia = 'Расстояние: 22'
         elif text.find('29km') != -1:
-            on = 2
+            on = 7
             print('29km')
             dalnost = '29км от лагеря'
             distancia = 'Расстояние: 29'
         elif text.find('36km') != -1:
-            on = 2
+            on = 8
             print('36km')
             dalnost = '36км от лагеря'
             distancia = 'Расстояние: 36'
@@ -291,7 +291,253 @@ def parse_text(text, username, message_id):
                 time.sleep(random.randint(6, 15))
                 send_msg('@', bot_username, '⚔️Дать отпор')
                     #/
-            elif text.find(dalnost) != -1 or text.find(distancia) != -1:
+            elif text.find('10км от лагеря') != -1:
+                on = 0
+            elif text.find('км от лагеря') != -1 or text.find('Расстояние:') != -1:
+                time.sleep(random.randint(5, 10))
+                send_msg('@', bot_username, '👣Идти дальше')
+                        #/
+
+        if on == 3:
+              # подхавка, если проебано сообщение о голоде и голод уже 100%
+            if text.find('100%') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_103')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_108')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # хил по сообщению о голоде
+            elif text.find('Ты очень голоден') != -1:
+                time.sleep(2)
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(2)
+                send_msg('@', bot_username, '/use_107')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(1)
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # Отаке
+            elif text.find('на тебя напал') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '⚔️Дать отпор')
+                    #/
+            elif text.find('12км от лагеря') != -1:
+                on = 0
+            elif text.find('км от лагеря') != -1 or text.find('Расстояние:') != -1:
+                time.sleep(random.randint(5, 10))
+                send_msg('@', bot_username, '👣Идти дальше')
+                        #/
+
+        if on == 4:
+              # подхавка, если проебано сообщение о голоде и голод уже 100%
+            if text.find('100%') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_103')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_108')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # хил по сообщению о голоде
+            elif text.find('Ты очень голоден') != -1:
+                time.sleep(2)
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(2)
+                send_msg('@', bot_username, '/use_107')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(1)
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # Отаке
+            elif text.find('на тебя напал') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '⚔️Дать отпор')
+                    #/
+            elif text.find('15км от лагеря') != -1:
+                on = 0
+            elif text.find('км от лагеря') != -1 or text.find('Расстояние:') != -1:
+                time.sleep(random.randint(5, 10))
+                send_msg('@', bot_username, '👣Идти дальше')
+                        #/
+
+        if on == 5:
+              # подхавка, если проебано сообщение о голоде и голод уже 100%
+            if text.find('100%') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_103')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_108')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # хил по сообщению о голоде
+            elif text.find('Ты очень голоден') != -1:
+                time.sleep(2)
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(2)
+                send_msg('@', bot_username, '/use_107')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(1)
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # Отаке
+            elif text.find('на тебя напал') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '⚔️Дать отпор')
+                    #/
+            elif text.find('19км от лагеря') != -1:
+                on = 0
+            elif text.find('км от лагеря') != -1 or text.find('Расстояние:') != -1:
+                time.sleep(random.randint(5, 10))
+                send_msg('@', bot_username, '👣Идти дальше')
+                        #/
+
+        if on == 6:
+              # подхавка, если проебано сообщение о голоде и голод уже 100%
+            if text.find('100%') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_103')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_108')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # хил по сообщению о голоде
+            elif text.find('Ты очень голоден') != -1:
+                time.sleep(2)
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(2)
+                send_msg('@', bot_username, '/use_107')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(1)
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # Отаке
+            elif text.find('на тебя напал') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '⚔️Дать отпор')
+                    #/
+            elif text.find('22км от лагеря') != -1:
+                on = 0
+            elif text.find('км от лагеря') != -1 or text.find('Расстояние:') != -1:
+                time.sleep(random.randint(5, 10))
+                send_msg('@', bot_username, '👣Идти дальше')
+                        #/
+
+        if on == 7:
+              # подхавка, если проебано сообщение о голоде и голод уже 100%
+            if text.find('100%') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_103')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_108')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # хил по сообщению о голоде
+            elif text.find('Ты очень голоден') != -1:
+                time.sleep(2)
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(2)
+                send_msg('@', bot_username, '/use_107')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(1)
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # Отаке
+            elif text.find('на тебя напал') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '⚔️Дать отпор')
+                    #/
+            elif text.find('29км от лагеря') != -1:
+                on = 0
+            elif text.find('км от лагеря') != -1 or text.find('Расстояние:') != -1:
+                time.sleep(random.randint(5, 10))
+                send_msg('@', bot_username, '👣Идти дальше')
+                        #/
+
+        if on == 8:
+              # подхавка, если проебано сообщение о голоде и голод уже 100%
+            if text.find('100%') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_103')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_108')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # хил по сообщению о голоде
+            elif text.find('Ты очень голоден') != -1:
+                time.sleep(2)
+                send_msg('@', bot_username, '/myfood')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_101')
+                time.sleep(2)
+                send_msg('@', bot_username, '/use_107')
+                time.sleep(3)
+                send_msg('@', bot_username, '/use_114')
+                time.sleep(1)
+                send_msg('@', bot_username, '/use_114')
+                    #/
+                    # Отаке
+            elif text.find('на тебя напал') != -1:
+                time.sleep(random.randint(6, 15))
+                send_msg('@', bot_username, '⚔️Дать отпор')
+                    #/
+            elif text.find('36км от лагеря') != -1:
                 on = 0
             elif text.find('км от лагеря') != -1 or text.find('Расстояние:') != -1:
                 time.sleep(random.randint(5, 10))
