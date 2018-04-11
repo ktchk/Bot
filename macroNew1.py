@@ -296,6 +296,7 @@ def parse_text(text, username, message_id):
             elif text.find('км от лагеря') != -1 or text.find('Расстояние:') != -1:
                 time.sleep(random.randint(5, 10))
                 send_msg('@', bot_username, '👣Идти дальше')
+                        #/
 
 
 def send_msg(pref, to, message):
